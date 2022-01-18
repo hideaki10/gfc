@@ -1,4 +1,4 @@
-module github.com/pterm/cli-template
+module github.com/hideaki10/gfc
 
 go 1.16
 
