@@ -1,9 +1,9 @@
-# cli-template
+# gfc
 
 ## Usage
 > This cli template shows the date and time in the terminal
 
-cli-template
+gfc
 
 ## Description
 
@@ -30,23 +30,21 @@ cli-template time --live
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion`|generate the autocompletion script for the specified shell|
-|`cli-template date`|Prints the current date.|
-|`cli-template help`|Help about any command|
-|`cli-template time`|Prints the current time|
+|`gfc completion`|generate the autocompletion script for the specified shell|
+|`gfc help`|Help about any command|
 # ... completion
-`cli-template completion`
+`gfc completion`
 
 ## Usage
 > generate the autocompletion script for the specified shell
 
-cli-template completion
+gfc completion
 
 ## Description
 
 ```
 
-Generate the autocompletion script for cli-template for the specified shell.
+Generate the autocompletion script for gfc for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
 ```
@@ -54,17 +52,17 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion bash`|generate the autocompletion script for bash|
-|`cli-template completion fish`|generate the autocompletion script for fish|
-|`cli-template completion powershell`|generate the autocompletion script for powershell|
-|`cli-template completion zsh`|generate the autocompletion script for zsh|
+|`gfc completion bash`|generate the autocompletion script for bash|
+|`gfc completion fish`|generate the autocompletion script for fish|
+|`gfc completion powershell`|generate the autocompletion script for powershell|
+|`gfc completion zsh`|generate the autocompletion script for zsh|
 # ... completion bash
-`cli-template completion bash`
+`gfc completion bash`
 
 ## Usage
 > generate the autocompletion script for bash
 
-cli-template completion bash
+gfc completion bash
 
 ## Description
 
@@ -76,13 +74,13 @@ This script depends on the 'bash-completion' package.
 If it is not installed already, you can install it via your OS's package manager.
 
 To load completions in your current shell session:
-$ source <(cli-template completion bash)
+$ source <(gfc completion bash)
 
 To load completions for every new session, execute once:
 Linux:
-  $ cli-template completion bash > /etc/bash_completion.d/cli-template
+  $ gfc completion bash > /etc/bash_completion.d/gfc
 MacOS:
-  $ cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+  $ gfc completion bash > /usr/local/etc/bash_completion.d/gfc
 
 You will need to start a new shell for this setup to take effect.
   
@@ -93,12 +91,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion fish
-`cli-template completion fish`
+`gfc completion fish`
 
 ## Usage
 > generate the autocompletion script for fish
 
-cli-template completion fish
+gfc completion fish
 
 ## Description
 
@@ -107,10 +105,10 @@ cli-template completion fish
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
-$ cli-template completion fish | source
+$ gfc completion fish | source
 
 To load completions for every new session, execute once:
-$ cli-template completion fish > ~/.config/fish/completions/cli-template.fish
+$ gfc completion fish > ~/.config/fish/completions/gfc.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -121,12 +119,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion powershell
-`cli-template completion powershell`
+`gfc completion powershell`
 
 ## Usage
 > generate the autocompletion script for powershell
 
-cli-template completion powershell
+gfc completion powershell
 
 ## Description
 
@@ -135,7 +133,7 @@ cli-template completion powershell
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
-PS C:\> cli-template completion powershell | Out-String | Invoke-Expression
+PS C:\> gfc completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -147,12 +145,12 @@ to your powershell profile.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion zsh
-`cli-template completion zsh`
+`gfc completion zsh`
 
 ## Usage
 > generate the autocompletion script for zsh
 
-cli-template completion zsh
+gfc completion zsh
 
 ## Description
 
@@ -167,9 +165,9 @@ $ echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
 # Linux:
-$ cli-template completion zsh > "${fpath[1]}/_cli-template"
+$ gfc completion zsh > "${fpath[1]}/_gfc"
 # macOS:
-$ cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+$ gfc completion zsh > /usr/local/share/zsh/site-functions/_gfc
 
 You will need to start a new shell for this setup to take effect.
 
@@ -179,51 +177,21 @@ You will need to start a new shell for this setup to take effect.
 |Flag|Usage|
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
-# ... date
-`cli-template date`
-
-## Usage
-> Prints the current date.
-
-cli-template date
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-f, --format string`|specify a custom date format (default "02 Jan 06")|
 # ... help
-`cli-template help`
+`gfc help`
 
 ## Usage
 > Help about any command
 
-cli-template help [command]
+gfc help [command]
 
 ## Description
 
 ```
 Help provides help for any command in the application.
-Simply type cli-template help [path to command] for full details.
+Simply type gfc help [path to command] for full details.
 ```
-# ... time
-`cli-template time`
-
-## Usage
-> Prints the current time
-
-cli-template time
-
-## Description
-
-```
-You can print a live clock with the '--live' flag!
-```
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-l, --live`|live output|
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 18 January 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 19 January 2022**
