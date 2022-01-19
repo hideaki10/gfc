@@ -1,5 +1,5 @@
-<h1 align="center">cli-template</h1>
-<p align="center">This cli template shows the date and time in the terminal</p>
+<h1 align="center">GFC</h1>
+<p align="center">This cli to execute flutter command</p>
 
 <p align="center">
 
