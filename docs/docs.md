@@ -23,6 +23,7 @@ cli-template time --live
 ## Flags
 |Flag|Usage|
 |----|-----|
+|`--c string`|to clean the local flutter cache|
 |`--debug`|enable debug messages|
 |`--disable-update-checks`|disables update checks|
 |`--raw`|print unstyled raw output (set it if output is written to a file)|
@@ -194,4 +195,4 @@ Simply type gfc help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 19 January 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 20 January 2022**
