@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"os"
 	"os/signal"
 
@@ -8,6 +9,8 @@ import (
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 )
+
+var c string
 
 var rootCmd = &cobra.Command{
 	Use:   "gfc",
@@ -20,11 +23,11 @@ cli-template time
 cli-template time --live`,
 	Version: "v0.0.1", // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
-	// RunE: func(cmd *cobra.Command, args []string) error {
-	// 	// Your code here
-	//
-	// 	return nil
-	// },
+	RunE: func(cmd *cobra.Command, args []string) error {
+		// Your code here
+		fmt.Println("Hello World!")
+		return nil
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -50,6 +53,8 @@ func Execute() {
 }
 
 func init() {
+
+	rootCmd.Flags().StringVar(&c, "c", "", "to clean the local flutter cache")
 	// Adds global flags for PTerm settings.
 	// Fill the empty strings with the shorthand variant (if you like to have one).
 	rootCmd.PersistentFlags().BoolVarP(&pterm.PrintDebugMessages, "debug", "", false, "enable debug messages")
